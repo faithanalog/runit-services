@@ -1,0 +1,2 @@
+#!/bin/sh
+./artemis-wg down "$(realpath conf)"

@@ -1,0 +1,3 @@
+#!/bin/sh
+./artemis-wg up "$(realpath conf)"
+exec perl -e '$SIG{TERM}=sub{exit}; sleep'
