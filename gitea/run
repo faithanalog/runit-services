@@ -1,0 +1,9 @@
+#!/bin/bash
+
+GITEA_HOME="SET ME"
+export GITEA_WORK_DIR="SET ME"
+
+set -e
+cd "$GITEA_HOME"
+exec 1>&2
+exec su git -l -c 'gitea web -c /etc/gitea/app.ini'
