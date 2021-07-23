@@ -4,5 +4,4 @@ SYNCTHING_HOME="SET ME"
 
 set -e
 cd "$SYNCTHING_HOME"
-exec 1>&2
-exec su syncthing -l -c '/usr/bin/syncthing -home='"'$SYNCTHING_HOME'"' -no-browser -no-restart'
+exec su syncthing -l -c '/usr/bin/syncthing -home='"'$SYNCTHING_HOME'"' -no-browser -no-restart' 1>&2
