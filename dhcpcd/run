@@ -1,0 +1,3 @@
+#!/bin/sh
+# -B = run in foreground
+exec dhcpcd -B 1>&2
