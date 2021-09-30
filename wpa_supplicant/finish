@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# delay restart on crash
+sleep 10
