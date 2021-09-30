@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# only run amdfand when card is connected.
+# intended for eGPU setup; no hotplug.
+if amdfand available | grep 'card[01]'; then
+    amdfand set-manual
+    exec amdfand service
+else
+    exec permafrost
+fi
